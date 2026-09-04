@@ -7,8 +7,3 @@ Colección de reproductores (players) para **TMDb Helper** con soporte para los 
 - **players alfa/**: Reproductores individuales para canales soportados por **Alfa** + reproductor multi-búsqueda.
 - **players balandro/**: Reproductores individuales para canales soportados por **Balandro** + reproductor multi-búsqueda.
 - **(1)MultiBusqueda.json**: Reproductor principal para multi-búsqueda simultánea (Alfa / Balandro) usando plugin.video.bridge.multi.
-
-## ⚙️ Instalación en Kodi
-
-Copia los archivos .json de la carpeta deseada (players alfa o players balandro) a la carpeta de players de TMDb Helper:
-special://userdata/addon_data/plugin.video.themoviedb.helper/players/
