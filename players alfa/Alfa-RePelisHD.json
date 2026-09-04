@@ -1,0 +1,20 @@
+{
+    "name": "Alfa-RePelisHD",
+    "plugin": "plugin.video.bridge.multi",
+    "priority": 200,
+    "is_resolvable": "true",
+    "assert": {
+        "play_movie": [
+            "title",
+            "year"
+        ]
+    },
+    "play_movie": [
+        "plugin://plugin.video.alfa.bridge.multi/?url=plugin://plugin.video.alfa/?eyJhY3Rpb24iOiJzZWFyY2giLCJjYXRlZ29yeSI6IigyOClBbGZhLVJlUGVsaXNIRCIsImNoYW5uZWwiOiJyZXBlbGlzaGQiLCJleHRyYSI6IiIsImZhbmFydCI6IiIsImluZm9MYWJlbHMiOnt9LCJwbG90IjoiIiwic2VhcmNoX3R5cGUiOiJtb3ZpZSIsImNfdHlwZSI6InNlYXJjaCIsInRodW1ibmFpbCI6IiIsInRpdGxlIjoiQnVzY2FyLi4uIn0=&title={title}&title_es={es-ES_title}&title_lat={es-MX_title}&title_en={en_title}&title_orig={originaltitle}&tmdb={tmdb}&imdb={imdb}&tvdb={tvdb}&trakt={trakt}&plot={plot}&plot_lat={es-MX_plot}&plot_es={es-ES_plot}&tagline={tagline}&tagline_lat={es-MX_tagline}&tagline_es={es-ES_tagline}&director={director}&year={year}",
+        {
+            "title": "(?i)^({es-ES_title}|{es-MX_title}|{en_title}|{originaltitle}|.+)",
+            "year": "{year}"
+        }
+    ],
+    "is_folder": "false"
+}

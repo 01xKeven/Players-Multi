@@ -1,0 +1,20 @@
+{
+    "name": "Balandro-Poseidonhd2",
+    "plugin": "plugin.video.bridge.multi",
+    "priority": 200,
+    "is_resolvable": "true",
+    "assert": {
+        "play_movie": [
+            "title",
+            "year"
+        ]
+    },
+    "play_movie": [
+        "plugin://plugin.video.bridge.multi/?url=plugin://plugin.video.balandro/?channel=poseidonhd2&title={title}&title_es={es-ES_title}&title_lat={es-MX_title}&title_en={en_title}&title_orig={originaltitle}&tmdb={tmdb}&imdb={imdb}&year={year}",
+        {
+            "title": "(?i)^({es-ES_title}|{es-MX_title}|{en_title}|{originaltitle}|.+)",
+            "year": "{year}"
+        }
+    ],
+    "is_folder": "false"
+}

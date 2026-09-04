@@ -1,0 +1,20 @@
+{
+    "name": "(1) Multi-Busqueda (Alfa / Balandro)",
+    "plugin": "plugin.video.bridge.multi",
+    "priority": 100,
+    "is_resolvable": "false",
+    "assert": {
+        "play_movie": [
+            "title",
+            "year"
+        ],
+        "play_episode": [
+            "showname",
+            "season",
+            "episode"
+        ]
+    },
+    "play_movie": "executebuiltin://RunPlugin(\"plugin://plugin.video.bridge.multi/?action=play&title={es-MX_title}&year={year}&title_es={es-ES_title}&title_lat={es-MX_title}&tmdb={tmdb}&imdb={imdb}&tvdb={tvdb}&trakt={trakt}&plot={plot}&plot_lat={es-MX_plot}&plot_es={es-ES_plot}&tagline={tagline}&tagline_lat={es-MX_tagline}&tagline_es={es-ES_tagline}&director={director}&title_en={en_title}&title_orig={originaltitle}&poster={poster}&fanart={fanart}&thumbnail={thumbnail}\")",
+    "play_episode": "executebuiltin://RunPlugin(\"plugin://plugin.video.bridge.multi/?action=play&title={es-MX_showname}&season={season}&episode={episode}&showname={showname}&showyear={showyear}&title_es={es-ES_showname}&title_lat={es-MX_showname}&tmdb={tmdb}&imdb={imdb}&tvdb={tvdb}&trakt={trakt}&plot={plot}&plot_lat={es-MX_plot}&plot_es={es-ES_plot}&tagline={tagline}&tagline_lat={es-MX_tagline}&tagline_es={es-ES_tagline}&director={director}&title_en={en_showname}&title_orig={original_name}&poster={poster}&fanart={fanart}&thumbnail={thumbnail}\")",
+    "is_folder": "false"
+}

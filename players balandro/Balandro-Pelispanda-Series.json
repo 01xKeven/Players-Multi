@@ -1,0 +1,22 @@
+{
+    "name": "Balandro-Pelispanda (Series)",
+    "plugin": "plugin.video.bridge.multi",
+    "priority": 200,
+    "is_resolvable": "true",
+    "assert": {
+        "play_episode": [
+            "showname",
+            "season",
+            "episode"
+        ]
+    },
+    "play_episode": [
+        "plugin://plugin.video.bridge.multi/?url=plugin://plugin.video.balandro/?channel=pelispanda&showname={showname}&showyear={showyear}&season={season}&episode={episode}&title={showname}&tmdb={tmdb}&imdb={imdb}",
+        {
+            "title": "(?i)^({es-ES_showname}|{es-MX_showname}|{en_showname}|{original_name}|.+)",
+            "season": "{season}",
+            "episode": "{episode}"
+        }
+    ],
+    "is_folder": "false"
+}
