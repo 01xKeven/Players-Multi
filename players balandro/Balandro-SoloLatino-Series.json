@@ -21,6 +21,5 @@
     "fallback": {
         "play_episode": "(6)Cuevana3Re-Series.json play_episode"
     },
-    "is_folder": "false",
-    "disabled": "true"
+    "is_folder": "false"
 }

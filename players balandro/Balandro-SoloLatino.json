@@ -18,6 +18,5 @@
     "fallback": {
         "play_movie": "(4)HdFull.json play_movie"
     },
-    "is_folder": "false",
-    "disabled": "true"
+    "is_folder": "false"
 }
